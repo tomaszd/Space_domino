@@ -83,6 +83,10 @@ class TestSpaceDominoChecker(unittest.TestCase):
 
     """Plese give some hard examples as for now it is working quite well"""
 
+    def test_0(self):
+        self.assertEqual(space_domino_checker(
+            ['bardzo-dlugi-wyrazkorab']), True)
+
     def test_1(self):
         self.assertEqual(space_domino_checker(
             ['basia', 'albert', 'teodor', 'robert', 'trakt', 'korab']), True)
@@ -92,6 +96,11 @@ class TestSpaceDominoChecker(unittest.TestCase):
 
     def test_3(self):
         self.assertEqual(space_domino_checker(['aga', 'gag', 'pap']), False)
+
+    def test_4(self):
+        self.assertEqual(space_domino_checker(['ada', 'ala', 'xx']), False)
+
+
 
 
 if __name__ == '__main__':
