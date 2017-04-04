@@ -79,7 +79,9 @@ def space_domino_checker(list_of_words=[]):
 import unittest
 
 
-class TestStringMethods(unittest.TestCase):
+class TestSpaceDominoChecker(unittest.TestCase):
+
+    """Plese give some hard examples as for now it is working quite well"""
 
     def test_1(self):
         self.assertEqual(space_domino_checker(
